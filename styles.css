@@ -111,6 +111,7 @@ header {
                 border-radius: 16px;
                 padding: 8px;
                 max-width: 800px;
+                outline: none;
             } 
 
                     
@@ -194,6 +195,13 @@ main {
     }
     
 
+    .description {
+        font-size: 0.9rem;
+        color: rgb(0 0 0 / 0.65);
+        max-width: 70ch;
+    }
+
+
     .user-projects {
         grid-row: 1 / -1;
         display: grid;
@@ -210,14 +218,27 @@ main {
 
             .project {
                 border-left: solid 8px orange;
-                padding: 16px;
+                padding: 32px 24px;
+                display: grid;
+                grid-template-rows: 1fr auto;
             }
+            
+                .project-title {
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    margin-bottom: 2px;
+                }
 
-
+                .project-interactions {
+                    display: grid;
+                    grid-template-columns: repeat(3, auto);
+                    justify-content: flex-end;
+                    gap: 16px;
+                }
 
     .announcement-list {
         display: grid;
-        padding: 0 32px;
+        padding: 32px;
     }
 
         .announcement-list li:nth-child(2n) {
@@ -226,7 +247,21 @@ main {
             background-color: #e1e8ee;
         }
 
+        .annmt-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
 
     .trending-list {
         display: grid;
+        align-items: center;
+        padding: 16px 32px;
     }
+
+        .trending-item {
+            display: grid;
+            grid-template: auto 1fr / auto 1fr;
+            gap: 2px 16px;
+            align-items: center;
+        }
+
