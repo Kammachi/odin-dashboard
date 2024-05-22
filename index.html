@@ -6,32 +6,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
 
     <body>
         <div class="sidebar">
             <div class="logo">
-                <img src="img/icons/view-dashboard.svg" alt="dashboard_logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
                 <h2>Dashboard</h2>
             </div>
 
             <div class="nav">
                 <ul>
-                    <li><a href=""><img src="img/icons/home-circle.svg" alt="home_icon" class="nav-icon">Home</a></li>
-                    <li><a href=""><img src="img/icons/account-box.svg" alt="acccount_icon" class="nav-icon">Profile</a></li>
-                    <li><a href=""><img src="img/icons/message.svg" alt="message_icon" class="nav-icon">Messages</a></li>
-                    <li><a href=""><img src="img/icons/history.svg" alt="history_icon" class="nav-icon">History</a></li>
-                    <li><a href=""><img src="img/icons/calendar-check.svg" alt="calendar_icon" class="nav-icon">Tasks</a></li>
-                    <li><a href=""><img src="img/icons/account-multiple.svg" alt="community_icon" class="nav-icon">Community</a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M19.07,4.93C17.22,3 14.66,1.96 12,2C9.34,1.96 6.79,3 4.94,4.93C3,6.78 1.96,9.34 2,12C1.96,14.66 3,17.21 4.93,19.06C6.78,21 9.34,22.04 12,22C14.66,22.04 17.21,21 19.06,19.07C21,17.22 22.04,14.66 22,12C22.04,9.34 21,6.78 19.07,4.93M17,12V18H13.5V13H10.5V18H7V12H5L12,5L19.5,12H17Z" /></svg>
+                        Home</a>
+                    </li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" /></svg>
+                        Profile</a>
+                    </li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" /></svg>
+                        Messages</a>
+                    </li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></svg>
+                        History</a>
+                    </li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z" /></svg>
+                        Tasks</a>
+                    </li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M16 17V19H2V17S2 13 9 13 16 17 16 17M12.5 7.5A3.5 3.5 0 1 0 9 11A3.5 3.5 0 0 0 12.5 7.5M15.94 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13M15 4A3.39 3.39 0 0 0 13.07 4.59A5 5 0 0 1 13.07 10.41A3.39 3.39 0 0 0 15 11A3.5 3.5 0 0 0 15 4Z" /></svg>
+                        Community</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="settings">
                 <ul>
-                    <li><a href=""><img src="img/icons/cog.svg" alt="cog_icon" class="nav-icon">Settings</a></li>
-                    <li><a href=""><img src="img/icons/help-box.svg" alt="helpbox_icon" class="nav-icon">Support</a></li>
-                    <li><a href=""><img src="img/icons/shield-account.svg" alt="shield_icon" class="nav-icon">Privacy</a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>
+                        Settings</a>
+                    </li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M11,18H13V16H11V18M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" /></svg>
+                        Support</a>
+                    </li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M17.13,17C15.92,18.85 14.11,20.24 12,20.92C9.89,20.24 8.08,18.85 6.87,17C6.53,16.5 6.24,16 6,15.47C6,13.82 8.71,12.47 12,12.47C15.29,12.47 18,13.79 18,15.47C17.76,16 17.47,16.5 17.13,17Z" /></svg>
+                        Privacy</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -39,13 +66,26 @@
         <header>
             <div class="header-top">
                 <form action="" method="get">
-                    <label for="search"><img src="img/icons/magnify.svg" alt="search_icon" class="header-icon"></label>
+                    <button type="submit" class="svg-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24" fill="black" class="theme-icon">
+                            <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+                    </button>
                     <input id="search" type="search" name="search">
                 </form>
 
+                <button type="button" class="theme-change svg-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                        fill="black" class="theme-icon">
+                        <path d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z" /></svg>
+                </button>
 
-                <img src="img/icons/bell-ring-outline.svg" alt="bell-icon" class="header-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                    fill="black" class="theme-icon">
+                    <path d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg>
+                    
                 <img src="img/pfps/blank_pfp.png" alt="user-pfp">
+                
                 <a href="" class="user-profile">Morgan Oakley</a>
             </div>
 
@@ -82,9 +122,21 @@
                         </div>
 
                         <div class="project-interactions">
-                            <a href=""><img src="img/icons/heart-outline.svg" alt="favourite"></a>
-                            <a href=""><img src="img/icons/eye-plus-outline.svg" alt="follow"></a>
-                            <a href=""><img src="img/icons/share-outline.svg" alt="share"></a> 
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" /></svg>
+                            </button>
                         </div>
                     </li>
 
@@ -103,9 +155,21 @@
                         </div>
 
                         <div class="project-interactions">
-                            <a href=""><img src="img/icons/heart-outline.svg" alt="favourite"></a>
-                            <a href=""><img src="img/icons/eye-plus-outline.svg" alt="follow"></a>
-                            <a href=""><img src="img/icons/share-outline.svg" alt="share"></a> 
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" /></svg>
+                            </button>
                         </div>
                     </li>
 
@@ -124,9 +188,21 @@
                         </div>
 
                         <div class="project-interactions">
-                            <a href=""><img src="img/icons/heart-outline.svg" alt="favourite"></a>
-                            <a href=""><img src="img/icons/eye-plus-outline.svg" alt="follow"></a>
-                            <a href=""><img src="img/icons/share-outline.svg" alt="share"></a> 
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" /></svg>
+                            </button>
                         </div>
                     </li>
 
@@ -145,9 +221,21 @@
                         </div>
 
                         <div class="project-interactions">
-                            <a href=""><img src="img/icons/heart-outline.svg" alt="favourite"></a>
-                            <a href=""><img src="img/icons/eye-plus-outline.svg" alt="follow"></a>
-                            <a href=""><img src="img/icons/share-outline.svg" alt="share"></a> 
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" /></svg>
+                            </button>
                         </div>
                     </li>
                     
@@ -166,9 +254,21 @@
                         </div>
 
                         <div class="project-interactions">
-                            <a href=""><img src="img/icons/heart-outline.svg" alt="favourite"></a>
-                            <a href=""><img src="img/icons/eye-plus-outline.svg" alt="follow"></a>
-                            <a href=""><img src="img/icons/share-outline.svg" alt="share"></a> 
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" /></svg>
+                            </button>
                         </div>
                     </li>
 
@@ -187,9 +287,21 @@
                         </div>
 
                         <div class="project-interactions">
-                            <a href=""><img src="img/icons/heart-outline.svg" alt="favourite"></a>
-                            <a href=""><img src="img/icons/eye-plus-outline.svg" alt="follow"></a>
-                            <a href=""><img src="img/icons/share-outline.svg" alt="share"></a> 
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            </button>
+                            <button type="button" class="svg-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                fill="black" class="theme-icon">
+                                <path d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" /></svg>
+                            </button>
                         </div>
                     </li>
                 </ul>
@@ -224,8 +336,8 @@
                     <li class="annmt">
                         <div class="annmt-title">Announcement</div>
                         <p class="description">Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. 
-
+                            consectetur adipiscing elit. Nullam malesuada ut arcu id gravida. 
+                            Praesent euismod varius malesuada.
                         </p>
                     </li>
 
